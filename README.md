@@ -283,6 +283,167 @@ Assessment: Potential phishing email.
 
 ---
 
+
+
+
+
+# System Vulnerability Checklist
+
+## Overview
+
+The System Vulnerability Checklist is a Python-based cybersecurity project that identifies common security vulnerabilities in a computer system through a simple questionnaire. The program evaluates password strength, software update status, and user security practices to calculate a risk score and provide detailed security recommendations.
+
+Based on the analysis, the tool generates a security report and classifies the system's overall security risk as Low, Medium, or High.
+
+---
+
+## Features
+
+### Password Strength Check
+
+Checks whether the password:
+
+* Contains at least 8 characters
+* Includes uppercase letters
+* Includes lowercase letters
+* Includes numbers
+* Includes special characters
+
+### Software Update Check
+
+Verifies whether the operating system is updated with the latest security patches.
+
+### User Security Practices Check
+
+Evaluates common unsafe security practices such as:
+
+* Reusing passwords
+* Clicking unknown email links
+* Using public Wi-Fi without a VPN
+
+### Risk Assessment
+
+Calculates a risk score based on detected vulnerabilities.
+
+Classifies the system into:
+
+* Low Risk
+* Medium Risk
+* High Risk
+
+### Detailed Security Report
+
+Generates a report containing:
+
+* Password strength status
+* Software update status
+* Unsafe user practices detected
+* Total risk score
+* Overall security level
+* Detailed security recommendations
+
+---
+
+## Technologies Used
+
+* Python 3
+* Standard Python Libraries
+
+---
+
+## How to Run
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Run the program:
+
+```bash
+python "System Vulnerability Checklist(Task 4).py"
+```
+
+4. Answer the security-related questions displayed on the screen.
+5. The program will analyze the responses and generate a security assessment report.
+
+---
+
+## Example Input
+
+```text
+Enter your password: Hello123
+
+Is your operating system updated? (yes/no): no
+
+Do you reuse passwords? (yes/no): yes
+
+Do you click unknown email links? (yes/no): no
+
+Do you use public Wi-Fi without VPN? (yes/no): yes
+```
+
+---
+
+## Example Output
+
+```text
+==================== SECURITY REPORT ====================
+
+Password Status : WEAK
+
+Software Status : Not Updated
+
+Total Risk Score : 4
+
+Overall Security Level : HIGH RISK
+
+Security Recommendations:
+
+- Use a stronger password.
+- Install the latest operating system updates.
+- Avoid reusing passwords.
+- Use a VPN while connected to public Wi-Fi.
+- Enable Multi-Factor Authentication (MFA).
+- Install trusted antivirus software.
+- Back up important files regularly.
+```
+
+---
+
+## Skills Demonstrated
+
+* Python Programming
+* Conditional Statements
+* Loops
+* String Processing
+* Input Validation
+* Cybersecurity Fundamentals
+* Risk Assessment
+* Basic System Security Analysis
+
+---
+
+## Limitations
+
+* User-input based assessment only.
+* Does not automatically scan the operating system.
+* Does not verify installed software versions.
+* Does not check firewall or antivirus status.
+* Does not perform real-time vulnerability scanning.
+
+---
+
+## Future Enhancements
+
+* Automatic system vulnerability scanning
+* Firewall status detection
+* Antivirus detection
+* Password breach checking
+* Report generation in PDF format
+* Graphical User Interface (GUI) using Tkinter
+* Automatic operating system update detection
+
+---
+
 ## Author
 Kotagiri Mansi
+
 
